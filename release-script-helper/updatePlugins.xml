@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+	<!--
+	  Each <plugin> element describes one plugin in the repository. Required.
+	  id - used by JetBrains IDEs to uniquely identify a plugin. Required. Must match <id> in plugin.xml
+	  url - path to download the plugin JAR/ZIP file. Required. Must be HTTPS
+	  version - version of this plugin. Required. Must match <version> in plugin.xml
+	-->
+	<plugin id="com.github.brandtjo.releasescripthelper.release-script-helper"
+			url="https://brandtjo.github.io/release-script-helper/release-script-helper-1.2.0.jar" version="1.2.0">
+
+		<idea-version since-build="2020.3"/>
+		<name>Release Script Helper</name>
+		<description>
+			<![CDATA[This plugin adds an additional "new-file-menu" entry, to add new release script files with semi-automatically generated names.
+A release script file name adheres to this pattern:<br>
+(timestamp|custom)_[(ticket-type)(ticket-number)_](description).(suffix)<br><br>
+The script generation is guided by a small dialog, allowing to opt out of using a ticket system, or defining ticket type, number and description.]]></description>
+		<change-notes><![CDATA[v1.2.0
+<ul>
+    <li>add generation menu action: selected text will be copied to the generated release script (Hotkey: ctrl alt r)</li>
+    <li>use project-relative file path for default directory</li>
+</ul>
+]]></change-notes>
+	</plugin>
+</plugins>
