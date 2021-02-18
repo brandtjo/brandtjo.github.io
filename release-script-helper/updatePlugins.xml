@@ -9,7 +9,7 @@
 	<plugin id="com.github.brandtjo.releasescripthelper.release-script-helper"
 			url="https://brandtjo.github.io/release-script-helper/release-script-helper-1.2.0.jar" version="1.2.0">
 
-		<idea-version since-build="2020.3"/>
+		<idea-version since-build="2020.3" until-build="*"/>
 		<name>Release Script Helper</name>
 		<description>
 			<![CDATA[This plugin adds an additional "new-file-menu" entry, to add new release script files with semi-automatically generated names.
